@@ -92,7 +92,7 @@ O resumo deve ser conciso (máximo 500 caracteres) e destacar os pontos principa
 Forneça apenas o resumo, sem introdução ou explicações adicionais."""
             
             message = self.client.messages.create(
-                model="claude-3-5-haiku-20241022",  # Fast and cost-effective
+                model="claude-3-5-sonnet-20241022",  # Fast and cost-effective
                 max_tokens=1024,
                 messages=[
                     {"role": "user", "content": prompt}
